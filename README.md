@@ -20,6 +20,7 @@ Lastly, as the amount of data can become quite large and thus saturate the RAM a
 
 # References
 [1] Exact stochastic simulation of coupled chemical reactions : https://pubs.acs.org/doi/abs/10.1021/j100540a008
+
 [2] A Mathematical Model that Simulates Control Options for African Swine Fever Virus (ASFV) :  https://doi.org/10.1371/journal.pone.0158658
 # Authors
 Guillaume Demaude
