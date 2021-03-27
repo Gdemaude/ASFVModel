@@ -24,4 +24,5 @@ Lastly, as the amount of data can become quite large and thus saturate the RAM a
 [2] A Mathematical Model that Simulates Control Options for African Swine Fever Virus (ASFV) :  https://doi.org/10.1371/journal.pone.0158658
 # Authors
 Guillaume Demaude
+
 Ninon Lavignasse
