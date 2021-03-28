@@ -8,11 +8,11 @@ This model is a replication of the model explained in [2] with a few differences
 - Emphasis on the speed of the implementation to be able to run the model on a larger population (tens of thousands of pigs instead of 500) within a reasonnable amount of time.
 
 # Implementation
-To run the model on a larger scale while maintaining a reasonnable runtime, a few keypoints where necessary. 
+To run the model on a larger scale while maintaining a reasonnable runtime, a few keypoints were necessary. 
 
-Firstly, Numba is used to accelerate the gillespie_direct() and the propensity function. This step alone allows the model to run 10 time faster than a normal python implementation.
+Firstly, Numba is used to accelerate the gillespie_direct() and the propensity() function. This step alone allows the model to run 10 time faster than a normal python implementation.
 
-Secondly, in order to exploit a multicore processor, a multiprocessed approach was used. The workload was divided and fed to the available cores. The results of the simulations is temporarily written into .npy files and afterward the main process reads the results and shows it in a graph. This approach allowed the improve the speed by a factor of 2. This speed could be improved using shared memory arrays.
+Secondly, in order to exploit a multicore processor, a multiprocessed approach was used. The workload was divided and fed to the available cores. The results of the simulations is temporarily written into .npy files and afterward the main process reads the results and shows it in a graph. This approach allowed the improve the speed by a factor of 2. This speed could be improved using shared memory arrays and thus avoiding the filewrite bottleneck.
 
 Lastly, as the amount of data can become quite large and thus saturate the RAM available, the results are subsampled to feed the data to matplotlib and create the graph.
 
