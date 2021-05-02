@@ -1,5 +1,5 @@
 # ASFVModel
-Numba accelerated and multiprocessed simulation of the African Swine Fever Virus propagation using Gillespie Algorithm [1] implemented in the same way as this [project](https://github.com/Gdemaude/Gillespie).
+Numba accelerated and multiprocess simulation of propagation of the African Swine Fever Virus using Gillespie Algorithm [1] implemented in the same way as this [project](https://github.com/Gdemaude/Gillespie).
 
 This model is a replication of the model explained in [2] with a few differences: 
 
