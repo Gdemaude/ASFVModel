@@ -18,7 +18,7 @@ The amount of data can become quite large and thus saturate the RAM available, t
 
 # Results
 <div align="center">
-    <img src="./Figure_1.png" width="600">
+    <img src="./Figure_1.png" width="800">
 </div>
 
 <div align="center">
