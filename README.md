@@ -12,9 +12,7 @@ To run the model on a larger scale while maintaining a reasonnable runtime, a fe
 
 Firstly, Numba is used to accelerate the gillespie_direct() and the propensity() function. This step alone allows the model to run 10 times faster than a normal python implementation.
 
-Secondly, in order to exploit a multicore processor, a multiprocessed approach was used. The workload was divided and fed to the available cores. The results of the simulations is temporarily written into .npy files and afterward the main process reads the results and shows it in a graph. This approach allowed the improve the speed by a factor of 2. This speed could be improved using shared memory arrays and thus avoiding the filewrite bottleneck.
-
-Lastly, as the amount of data can become quite large and thus saturate the RAM available, the results are subsampled to feed the data to matplotlib and create the graph.
+Secondly, in order to exploit a multicore processor, a multiprocessed approach was used. The workload was divided and fed to the available cores. The results is stored in shared memory for the main process to use in order to plot the graphs. The amount of data can become quite large and thus saturate the RAM available, thus the results are subsampled to feed matplotlib and create the graphs.
 
 # Results
 
