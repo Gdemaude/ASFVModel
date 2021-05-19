@@ -19,7 +19,7 @@ The amount of data can become quite large and thus saturate the RAM available, t
 # Results
 
 <div align="center">
-    <img src="./Figure_1.png" width="800">
+    <img src="./Figure_1.png" width="1000">
 </div>
 
 Results of the simulation on a population of 100000 pigs. Orange curves: stochastic simulations. Black curve: ODE resolution. Blue line: Day of implementation of bio-security measures. 
