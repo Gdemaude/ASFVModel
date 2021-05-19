@@ -116,6 +116,14 @@ def monsousprocess( seed, nb_sim,l,mq,pq):
         #np.save(path+str(i)+".npy", res) # data written down
 
 def differential_ASFV(d, t):
+    mu = 0.0037
+    beta = 0.5
+    gamma = 0.15
+    rho = 0.19
+    sigma = 0.22
+    kappa = 0.06
+    epsilon = 0.3
+    betai = 0.05
     if intervention :
         if t >= intervention:
             beta = (betai + (beta - betai) * exp(-(t - intervention)))
