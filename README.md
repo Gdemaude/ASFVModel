@@ -17,6 +17,7 @@ Secondly, in order to exploit a multicore processor, a multiprocessed approach w
 The amount of data can become quite large and thus saturate the RAM available, thus the results are subsampled to feed matplotlib and create the graphs.
 
 # Results
+
 <div align="center">
     <img src="./Figure_1.png" width="800">
 </div>
@@ -24,6 +25,9 @@ The amount of data can become quite large and thus saturate the RAM available, t
 <div align="center">
     <img src="./Figure_2.png" width="600">
 </div>
+
+Results of the simulation on a population of 100000 pigs. Orange curves: stochastic simulations. Black curve: ODE resolution. Blue line: Day of implementation of bio-security measures. 
+
 # References
 [1] Exact stochastic simulation of coupled chemical reactions : https://pubs.acs.org/doi/abs/10.1021/j100540a008
 
