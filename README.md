@@ -3,7 +3,7 @@ Numba accelerated and multiprocess simulation of propagation of the African Swin
 
 This model is a replication of the model explained in [2] with a few differences: 
 
-- Correction of an error in the original paper: the transition rate for exposed pigs is Beta * S * (I + epsilon * C) / N  instead of Beta * S * (I + epsilon * C) , with N the total of live pigs.
+- Correction of an error in the original paper: the correct transition rate for exposed pigs is Beta * S * (I + epsilon * C) / N  instead of Beta * S * (I + epsilon * C) , with N the total of live pigs.
 - No modelling of a vaccination plan for ASFV, only biosecurity measures are taken into account.
 - Emphasis on the speed of the implementation to be able to run the model on a larger population (tens of thousands of pigs instead of 500) within a reasonnable amount of time.
 
